@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+:root {
+  --primary: #094b65;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+@media screen and (max-width: 660px) {
+  #header {
+    display: unset;
+    text-align: center;
+  }
+}
+#header .logo {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 2em;
+}
+#header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header ul li {
+  margin-left: 20px;
+}
+#header ul li a {
+  padding: 6px 15px;
+  color: var(--primary);
+  border-radius: 20px;
+}
+@media screen and (max-width: 660px) {
+  #header ul li a {
+    padding: 3px 5px;
+  }
+}
+#header ul li a:hover, #header ul li a.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+main .section1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section1 img {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+main .section1 #text {
+  position: absolute;
+  color: var(--primary);
+  font-size: 10vw;
+  text-align: center;
+  line-height: 0.55em;
+  font-family: "Rancho", cursive;
+  transform: translateY(-50%);
+}
+main .section1 #text span {
+  font-size: 0.2em;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+main .section1 #btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  background: #fff;
+  color: var(--primary);
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  transform: translateY(100px);
+}
+main .section1 #btn:hover {
+  background: #636106;
+  color: #fff;
+  transition: 1s ease-in-out;
+}
+main .section1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, var(--primary), transparent);
+  z-index: 10;
+}
+main .section2 {
+  position: relative;
+  padding: 100px;
+  background: var(--primary);
+}
+main .section2 h2 {
+  font-size: 3.5em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+main .section2 p {
+  font-size: 1em;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
